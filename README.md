@@ -3,8 +3,6 @@
 
 grainfields turns your 128 grid into a granular synthesizer with 8 voices - each with up to 10 constant streaming grains. Modulate grain parameters (pitch, duration, loop rate, position etc.) of each voice to create a large variety of interesting timbres and textures. Record and loop pattern gestures to create rythmic and melodic sequences.
 
-![alt tag](https://raw.githubusercontent.com/kasperskov/monome_grainfields-v1.0/master/grainfields_interface.png)
-
 #### Getting started
 
 Before launching grainfields make sure that your grid is connected. At the lower right corner of the app go to 'audio & osc setup' and choose your device in the serialosc dropdown (should auto detect).
