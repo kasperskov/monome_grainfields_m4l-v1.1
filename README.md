@@ -5,11 +5,17 @@ grainfields turns your 128 grid into a granular synthesizer with 8 voices - each
 
 #### Getting started
 
-Before launching grainfields make sure that your grid is connected. At the lower right corner of the app go to 'audio & osc setup' and choose your device in the serialosc dropdown (should auto detect).
+Before launching the grainfields Max for Live device make sure that your grid is connected. 
 
-Set your audio settings and enable audio.
+1st step in Ableton is to drop 'grainfields_master.amxd' on an empty track. This device establishes the osc connection with monome (and Lemur on iPad). Show/hide osc settings with the toggle at the bottom of the device. Your monome should auto-detect.
 
-#### 8 rows / 8 voices
+![alt tag](https://raw.githubusercontent.com/kasperskov/monome_grainfields_m4l-v1.0/master/grainfields_master.png)
+
+2nd step is to drop 'voice_1.amxd', 'voice_2.amxd', 'voice_3.amxd' (...and so on) on separate audio tracks (as suggested below). When a new voice m4l device is loaded on an audio track in Ableton, the device will automatically activate the corresponding lights on your monome grid. If you only need e.g. 3 voices then load 'voice_1', 'voice_2', and 'voice_3'. You don't need to load all voices.
+
+![alt tag](https://raw.githubusercontent.com/kasperskov/monome_grainfields_m4l-v1.0/master/overview.png)
+
+#### 8 rows / up to 8 voices
 
 Every row represents a voice, and each voice contains a buffer with up to 10 individual grains. To change buffer content simply drag and drop an audio file into the waveform display of a voice.
 
@@ -44,8 +50,8 @@ Saving a preset (shift>click on a slot) will store all current parameter setting
 
 #### Lemur interface 
 
-Control individual voices directly in the application or via the included Lemur interface (requires Lemur on iPad).
+Control individual voices directly in Ableton or via the included Lemur interface (requires Lemur on iPad).
 
 Install the interface on iPad ('monome_grainfields.jzml' located in the project folder) and make sure to provide the correct port and host settings for incoming and outgoing OSC.
 
-Patch created by Kasper Fangel Skov 2016
+Max for Live devices created by Kasper Fangel Skov 2016
